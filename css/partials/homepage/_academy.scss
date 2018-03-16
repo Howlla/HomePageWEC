@@ -1,0 +1,82 @@
+.academy {
+  color: #fff;
+  padding: 6rem 0;
+  margin: 6rem 0 0;
+
+  @include breakpoint(less-than-md) {
+	margin-top: 1rem;
+	padding: 2rem 0;
+  }
+
+  h1 {
+	text-transform: uppercase;
+	margin: 0 0 2rem;
+	font-size: 1.45rem;
+
+	span {
+	  font-weight: 500;
+	  color: rgba(255, 255, 255, 0.75);
+	  text-transform: none;
+	}
+  }
+
+  .feature {
+	i, svg {
+	  @extend .color-primary-secondary-gradient;
+	  color: #fff;
+	  float: left;
+	  font-size: 2.5rem;
+	  margin: 0.25rem 0.75rem 0.25rem 0;
+      -webkit-text-fill-color: #fff;
+	}
+
+	h3 {
+	  font-size: 1.25rem;
+	  margin: 0 0 0.15rem;
+	}
+
+	p {
+	  font-size: 0.9rem;
+	  color: #fff;
+	  margin-bottom: 1.5rem;
+	}
+  }
+
+  .image {
+	height: 100%;
+	margin: 0 auto;
+	background: transparent url(../images/academy-image.png) no-repeat bottom center / 87%;
+
+	@include breakpoint(less-than-md) {
+	  height: auto;
+	  min-height: 14.5rem;
+	  background-size: 110%;
+	  background-position: center center;
+	  margin: 0 -15px 2rem;
+	}
+
+	a {
+	  display: none;
+	  width: 100%;
+	  height: 100%;
+
+	  i, svg {
+		background-color: #fff;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 3rem;
+	  }
+	}
+  }
+
+  .btn {
+	min-width: 40%;
+	margin: 0 1rem 0 0;
+
+	@include breakpoint(less-than-md) {
+	  min-width: 100%;
+	  margin: 0 0 0.5rem;
+	}
+  }
+}

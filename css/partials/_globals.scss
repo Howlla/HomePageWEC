@@ -1,0 +1,25 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-primary;
+}
+
+a,
+.btn {
+  @extend .animate-hover;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    @extend .animate-hover;
+  }
+}
+
+.page-title{
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}

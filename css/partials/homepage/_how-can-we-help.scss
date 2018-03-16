@@ -1,0 +1,100 @@
+.how-can-we-help {
+  margin-top: -10rem;
+  text-align: center;
+
+  @include breakpoint(less-than-md) {
+	margin-top: -5rem;
+  }
+
+  h1 {
+	color: #fff;
+	margin: 0 0 1rem;
+	font-size: 1.25rem;
+
+	@include breakpoint(less-than-md) {
+	  color: #888;
+	  margin-top: 1rem;
+	}
+  }
+
+  .btn {
+	@include breakpoint(less-than-md) {
+	  width: 90%;
+	  font-size: 1.05rem;
+	  margin-bottom: 1rem;
+	  text-transform: none;
+	}
+  }
+
+  .how-can-we-help-wrapper {
+	background-color: #fff;
+	border-radius: 25px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+	overflow: hidden;
+
+	h2 {
+	  font-size: 1.25rem;
+	  line-height: 1em;
+	  padding: 1.75rem 0;
+	  margin: 0;
+	}
+
+	.btn {
+	  margin: 1.75rem;
+	  width: 80%;
+	}
+
+	ul {
+	  text-align: left;
+	  padding: 0;
+	  margin: 0;
+	  list-style-position: inside;
+
+	  li {
+		font-size: 0.9rem;
+		padding: 0.75rem 0 0.75rem 2rem;
+		color: #ababab;
+		border-bottom: 1px solid #c5c5c5;
+
+		&:first-child {
+		  border-top: 1px solid #c5c5c5;
+		}
+	  }
+	}
+
+	.video {
+	  height: 100%;
+	  background: $color-primary url(../images/how-can-we-help-video.jpg) no-repeat center center / cover;
+
+	  @include breakpoint(less-than-md) {
+		min-height: 14.5rem;
+	  }
+
+	  .btn {
+		position: absolute;
+		bottom: 2rem;
+		left: 50%;
+		width: 60%;
+		margin: 0 0 0 -30%;
+
+		@include breakpoint(less-than-md) {
+		  bottom:1rem;
+		}
+	  }
+	}
+
+	.idea {
+	  h2 {
+		color: $color-primary;
+	  }
+	}
+
+	.startup {
+	  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+
+	  h2 {
+		color: $color-secondary;
+	  }
+	}
+  }
+}

@@ -1,0 +1,22 @@
+.authentication-wrapper {
+  background: #fff url(../images/neural-network-background.jpg) no-repeat center center / cover;
+
+  @include breakpoint(less-than-md) {
+	height: 80vh;
+  }
+
+  .container {
+	&, .vertical-align {
+	  height: 100%;
+	}
+  }
+
+  .vertical-align {
+	> * {
+	  @include breakpoint(less-than-md) {
+		top: 50%;
+		transform: translateY(-50%);
+	  }
+	}
+  }
+}

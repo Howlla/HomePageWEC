@@ -1,0 +1,7 @@
+header {
+  background: $color-primary url('../images/header.png') no-repeat center center / cover;
+
+  @include breakpoint(less-than-md) {
+    background-position: top left;
+  }
+}

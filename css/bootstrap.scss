@@ -1,0 +1,19 @@
+//
+// Theme Overrides
+// --------
+
+@import "partials/_variables";
+$theme-colors: (
+  "primary": $color-primary,
+  "secondary": $color-secondary
+);
+
+.btn-light {
+  color: $color-primary !important;
+}
+
+//
+// Bootstrap Import
+// --------
+
+@import "../vendor/twbs/bootstrap/scss/bootstrap";

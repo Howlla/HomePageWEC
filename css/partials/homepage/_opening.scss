@@ -1,0 +1,68 @@
+.opening {
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+
+  @include breakpoint(less-than-md) {
+	height: auto;
+	min-height: 0;
+	padding-bottom: 7rem;
+	text-align: left;
+  }
+
+  .container {
+	&, > .row {
+	  height: 100%;
+	}
+  }
+
+  h1 {
+	font-size: 2.1rem;
+	margin-top: -7.5rem;
+	font-weight: 600;
+
+	@include breakpoint(less-than-md) {
+	  font-size: 1.65rem;
+	  line-height: 1.25em;
+	  margin-top: 1rem;
+	}
+
+	span {
+	  display: block;
+	  margin: 0.75rem 0 2rem;
+	  font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.5;
+	}
+  }
+
+  p {
+	font-size: 1.25rem;
+	opacity: 0.75;
+	margin-top: 0.5rem;
+
+	@include breakpoint(less-than-md) {
+	  font-size: 1.15rem;
+	}
+  }
+
+  img {
+	position: absolute; 
+	right: 2rem;
+	width: 30rem;
+	margin: -14.5rem 0 0 0;
+    
+    @include breakpoint(less-than-md){
+      margin: -13rem 0 0 0;  
+    }
+  }
+
+  canvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+  }
+}

@@ -1,0 +1,24 @@
+//
+// Imports
+// --------
+body {
+  &.contentpage {
+    .content-wrapper {
+      margin-top: -9.9rem;
+      padding-bottom: 4rem;
+      @include breakpoint(less-than-md) {
+        margin-top: -13rem;
+      }
+      .static-content{
+        .card-header{
+          padding: 1rem 3rem;
+        }
+        .card-body{
+          h2{
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+//
+// Imports
+// --------
+body {
+  &.contentsidebarpage,  &.contentpage ,&.contentsidebarholderpage,&.search-form-page,&.aboutpage{
+    header{
+      padding-bottom: 15rem;
+      @include breakpoint(less-than-md) {
+        padding-bottom: 15rem;
+      }
+    }
+           
+	@import "_content-wrapper";
+  }
+  
+  
+}

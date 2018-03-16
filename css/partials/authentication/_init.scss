@@ -1,0 +1,42 @@
+//
+// Imports
+// --------
+body {
+  &.authentication {
+	.container-fluid {
+	  > .row {
+		height: 100%;
+  
+		@include breakpoint(less-than-md) {
+		  height: auto;
+		}
+         
+	   	> * { 
+		  height: 100%;
+
+		  @include breakpoint(less-than-md) {
+			height: auto;
+		  }
+		}
+	  }
+
+	  @import "sidebar";
+	  @import "authentication";
+	}
+  }
+
+  .authentication-form {
+	margin: 10rem 0;
+
+	@include breakpoint(less-than-md) {
+	  margin: 2rem 0;
+	}
+
+	.btn {
+	  @include breakpoint(less-than-md) {
+		margin-bottom: 1rem;
+		width: 100%;
+	  }
+	}
+  }
+}

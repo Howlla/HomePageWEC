@@ -1,0 +1,85 @@
+.guidance {
+  @include breakpoint(less-than-md) {
+	border-top: 6px solid #fbfbfb;
+  	margin-top: 1rem;
+  }
+
+  h1 {
+	text-transform: uppercase;
+	margin: 6rem 0 2rem;
+	font-size: 1.45rem;
+
+	@include breakpoint(less-than-md) {
+	  margin-top: 1rem;
+	  margin-bottom: 1rem;
+	  text-transform: none;
+	  font-weight: 600;
+	}
+
+	span {
+	  font-weight: 500;
+	  color: #858585;
+	  text-transform: none;
+
+	  @include breakpoint(less-than-md) {
+		margin-top: 0.25rem;
+		display:block;
+	  }
+	}
+  }
+
+  .guideline {
+	i, svg {
+	  @extend .color-primary-secondary-gradient;
+	  color: $color-primary;
+	  float: left;
+	  font-size: 3rem;
+	  margin: 0.5rem 0.75rem 0.5rem 0;
+
+	  @include breakpoint(less-than-md) {
+		font-size: 6rem;
+		margin-right: 1rem;
+	  }
+	}
+
+	h3 {
+	  font-size: 1.25rem;
+	  margin: 0 0 0.15rem;
+
+	  @include breakpoint(less-than-md) {
+		font-weight: 600;
+		font-size: 1rem;
+	  }
+	}
+
+	p {
+	  font-size: 0.9rem;
+	  color: #858585;
+	  margin-bottom: 1.5rem;
+
+	  @include breakpoint(less-than-md) {
+		font-size: 0.8rem;
+	  }
+	}
+  }
+
+  .video {
+	height: 100%;
+	margin: 0 auto;
+	background: transparent url(../images/guidance-video.png) no-repeat bottom center / 87%;
+
+	a {
+	  display: none;
+	  width: 100%;
+	  height: 100%;
+
+	  i, svg {
+		background-color: #fff;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 3rem;
+	  }
+	}
+  }
+}

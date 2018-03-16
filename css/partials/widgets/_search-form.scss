@@ -1,0 +1,31 @@
+.search-form{
+  @include breakpoint(lg){
+    margin-left: 50%;  
+  }
+  
+  .input-group{
+    background: #fff;
+    border-radius: 1.5rem;
+    padding: 5px 30px;
+    .input-group-prepend{
+      .input-group-text{
+        background: #fff;
+        border: none;
+        color: #999;
+      }
+    } 
+    
+    .form-control{ 
+      border: none;
+      font-size: 14px;
+      box-shadow: none;
+      &:focus{
+        background: #fff;
+      }
+      &::placeholder {
+        color: #999;
+        opacity: 1; 
+      }
+    }
+  }
+}

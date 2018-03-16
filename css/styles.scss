@@ -1,0 +1,61 @@
+//
+// Global Imports
+// --------
+@import "partials/_variables";
+// ---
+// fonts
+@import "partials/_fonts.scss";
+
+@import "partials/_mixins";
+@import "partials/_forms";
+@import "partials/_buttons";
+@import "partials/_globals";
+@import "partials/widgets/_init";
+//
+// Partials
+// --------
+
+// ---
+// Header
+@import "partials/header/_init";
+
+// ---
+// Footer
+@import "partials/footer/_init";
+
+
+//
+// Pages
+// --------      
+
+// ---
+// Authentication
+@import "partials/authentication/_init";
+
+// ---
+// Authentication
+@import "partials/authentication-profile/_init";
+
+
+// ---
+// Authentication
+@import "partials/application-form-page/_init";
+
+
+// ---
+// Homepage
+@import "partials/homepage/_init";
+
+// ---
+// ContentSideBarPage
+@import "partials/content-sidebar-page/_init";
+
+// ---
+// ContentPage
+@import "partials/content-page/_init";
+
+// ---
+// AboutPage
+@import "partials/about-page/_init";
+
+

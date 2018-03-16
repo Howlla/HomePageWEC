@@ -1,0 +1,12 @@
+//
+// Imports
+// --------
+body {
+  &.homepage {
+	@import "opening";
+	@import "how-can-we-help";
+	@import "guidance";
+	@import "academy";
+	@import "statistics";
+  }
+}

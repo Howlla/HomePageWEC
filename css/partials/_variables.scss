@@ -1,0 +1,23 @@
+// Fonts
+$font-primary: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+
+// Colors
+$color-primary: #c03ccc;
+$color-secondary: #e5715c;
+
+// Gradients
+
+.color-primary-secondary-gradient,
+.text-primary-secondary-gradient {
+  background: -webkit-linear-gradient(-45deg, $color-primary, $color-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.background-primary-secondary-gradient {
+  background: $color-primary;
+  background: -moz-linear-gradient(-45deg, $color-primary 0%, $color-secondary 100%);
+  background: -webkit-linear-gradient(-45deg, $color-primary, $color-secondary 100%);
+  background: linear-gradient(135deg, $color-primary 0%, $color-secondary 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-primary', endColorstr='$color-secondary',GradientType=1 );
+}

@@ -1,0 +1,37 @@
+//
+// Imports
+// --------
+body {
+  &.aboutpage {
+    header{
+      padding-bottom: 25rem;
+      @include breakpoint(less-than-md) {
+        padding-bottom: 15rem;
+      }
+    }
+    .page-title{
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      padding-bottom: 8rem;
+    }
+    .content-wrapper {
+      margin-top: -17rem;
+      padding-bottom: 4rem;
+      @include breakpoint(less-than-md) {
+        margin-top: -13rem;
+      }
+      .static-content{
+        .card-header{
+          padding: 1rem 3rem;
+        }
+        .card-body{
+          h2{
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+}
